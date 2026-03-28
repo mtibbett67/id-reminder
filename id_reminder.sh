@@ -22,12 +22,14 @@ while true; do
   # If we are exactly on the 10-minute mark (seconds_to_sleep is 600),
   # but we want to trigger NOW, we handle that here:
   if [ "$seconds_to_sleep" -eq 600 ]; then
-    zenity --info --title="Reminder" --text="Time to ID!" --width=200
+    paplay /usr/share/sounds/freedesktop/stereo/complete.oga &&
+      zenity --info --title="Reminder" --text="Time to ID!" --width=200
     # After closing the popup, sleep for the next full 10 mins
     sleep 600
   else
     # Wait until the next interval
     sleep "$seconds_to_sleep"
-    zenity --info --title="Reminder" --text="Time to ID!" --width=200
+    paplay /usr/share/sounds/freedesktop/stereo/complete.oga &&
+      zenity --info --title="Reminder" --text="Time to ID!" --width=200
   fi
 done
