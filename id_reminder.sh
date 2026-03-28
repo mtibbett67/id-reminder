@@ -1,7 +1,7 @@
 #!/bin/bash
 
 zenity --info --title="Countdown Timer" --text="$message" --width=300
-enity --info --title="Countdown Timer" --text="$message" --width=300
+zenity --info --title="Countdown Timer" --text="$message" --width=300
 
 # Ensure zenity is installed for the popup
 if ! command -v zenity &>/dev/null; then
