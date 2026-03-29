@@ -6,6 +6,9 @@ sudo apt install zenity
 ```
 
 Once you have installed Zenity download the id_reminder.sh script.
+```
+git clone https://github.com/mtibbett67/id-reminder.git
+```
 
 Next make the script executable by running 
 ```
